@@ -1,0 +1,107 @@
+/* 需要去原来theme.css中，把标题的样式全部删除*/
+/* 替换 theme.css中的数据*/
+:root {
+      --b3-theme-background:#CAEACE!important;
+
+   --b3-theme-surface:#BEEABE!important;
+ --b3-protyle-inline-blockref-color: #3366FF!important;
+ }
+
+
+/* 增加 */
+.protyle-background {
+    display: none;
+}
+.protyle-title__input{ font-size: 1.6rem; text-align: center; }
+.protyle-title{ margin: 0 important;}
+.protyle-content {text-indent:2em!important;}
+.protyle-content .list {text-indent:0.1rem!important;}
+/*字体*/
+.b3-typography, .protyle-wysiwyg, .protyle-title {font-size: 1.2rem !important;}
+.b3-typography img, .protyle-wysiwyg img {text-indent:0.1rem!important;}
+
+/*标题*/
+
+.protyle-wysiwyg [data-node-id].h2,.b3-typography h3,.protyle-wysiwyg [data-node-id].h1,.protyle-wysiwyg [data-node-id].h3 {  margin-top: 10px; margin-bottom: 10px; padding-top: 3px; padding-bottom: 3px; padding-left: 10px; -webkit-font-smoothing: antialiased; cursor: text;  background-color: #7BBA67; border-left-width: 10px; border-left-style: solid; border-left-color: #E54233;  white-space: normal;text-indent:0.2rem!important;}
+
+.protyle-wysiwyg [data-node-id].h4,.protyle-wysiwyg [data-node-id].h5,.protyle-wysiwyg [data-node-id].h6 {  padding-left: 3px; border-left-width: 3px; border-left-style: solid; border-left-color: #009300; color: #3ca89ec9; text-indent:0.2rem!important;}
+
+
+
+
+.b3-typography strong, .protyle-wysiwyg strong {
+    color: rgb#009300!important;
+}
+
+/* -------------------------------标题样式-------------------------------------- */
+.protyle-wysiwyg [data-node-id].h1 ,.b3-typography h1{
+    text-align: center;
+      font-size: 1.4em !important;
+}
+.protyle-wysiwyg [data-node-id].h2,.b3-typography h2 {
+    font-size: 1.3em !important;
+
+}
+.protyle-wysiwyg [data-node-id].h3,.b3-typography h3 {
+    font-size: 1.2em !important;<br />}
+
+.protyle-wysiwyg [data-node-id].h4,.b3-typography h4 {
+    font-size: 1.1em !important;
+    color: #009688;
+}
+.protyle-wysiwyg [data-node-id].h5,.b3-typography h5 {
+    font-size: 1em!important;
+    color: #009688;
+}
+.protyle-wysiwyg [data-node-id].h6,.b3-typography h6 {
+    font-size: 1em!important;
+    /* color: #03a1b9cc; */
+}
+<br />*
+
+
+/* 调整列表间距 */
+
+.protyle .li {
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+}
+.protyle-wysiwyg [data-node-id].li>.p {
+    margin-left: 0px;
+    margin-top: -4px ;
+    margin-bottom: -4px ;
+}
+.b3-typography ul li.protyle-task::before {
+    margin:2px 2px 0px -2px; 
+}
+/* 有序列表标号大小 */
+.li > .protyle-action {
+    height: 40px;
+    line-height: 40px;
+}
+
+/* 应该研究的 */
+
+/* 列表悬浮 */
+.protyle-wysiwyg [data-node-id].li>.protyle-action:hover:after {
+    /* 大圆背景 */
+    background-color: #a1b5bd9c !important;
+    opacity: .68;
+
+}
+.protyle-wysiwyg [data-node-id].li>.protyle-action:hover {
+    /* 小圆点 */
+    color: #476796bb;
+}
+/* 列表折叠 */
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.protyle-action:after{
+    /* 大圆背景 */
+    background-color: #66a9a37d !important;
+    opacity: .68;
+}
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.protyle-action {
+    /* 小圆点 */
+    color: #479675 !important;
+}
+
+
