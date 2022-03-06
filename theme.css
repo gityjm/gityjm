@@ -899,8 +899,6 @@ div[data-subtype='t'][data-type='NodeList'] {
 
 .protyle-reset .hljs,
 .protyle-wysiwyg .hljs ,.b3-typography .hljs{
-
-text-indent:0.1em!important;
     padding-top: 4px !important;
     padding-bottom: 4px !important;
     padding-left: 16px;
@@ -912,9 +910,6 @@ text-indent:0.1em!important;
 
 .code-block {
     position: relative;
-text-indent:0.1em!important;
-
-
     display: block;
     border-radius: 4px;
     background: var(--b3-protyle-code-background) ;
@@ -928,7 +923,6 @@ text-indent:0.1em!important;
 } */
 
 .code-block::after {
-text-indent:0.1em!important;
     content: '';
     position: absolute;
     background: #fa625c;
@@ -943,13 +937,22 @@ text-indent:0.1em!important;
 }
 
 
-
+/*  代码块行数*/
+.protyle-linenumber__rows {
+text-indent:0.1rem!important;
+    margin-top: 32px !important;
+    background-image: url('src/paper.png');
+    background-color:var(--b3-protyle-code-background);
+    /* padding-right:10px; */
+    /* padding-bottom: 0px; */
+    /* margin-bottom: 0px; */
+    /* width: 39px; */
+    font-family: var(--b3-font-family-code);
+}
 
 
 .protyle-linenumber__rows::before{
     /* 代码行数右边的分割线 */
-
-text-indent:0.1em!important;
     content: '';
     display: block;
     position: absolute;
@@ -997,7 +1000,6 @@ text-indent:0.1em!important;
 .code-block .protyle-icons .protyle-action__copy:hover{
     opacity: 1;
 }
-
 
 
 /* -----------------      外观样式 ----------------- */
