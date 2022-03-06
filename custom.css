@@ -18,7 +18,7 @@
 /*首行缩进*/
 .protyle-content {text-indent:2em!important;}
 .protyle-content .list {text-indent:0.1rem!important;}
-
+.protyle-reset .hljs, .protyle-wysiwyg .hljs, .b3-typography .hljs{text-indent:0.1rem!important;}
 /*字体*/
 .b3-typography, .protyle-wysiwyg, .protyle-title {font-size: 1.2rem !important;}
 .b3-typography img, .protyle-wysiwyg img {text-indent:0.1rem!important;}
